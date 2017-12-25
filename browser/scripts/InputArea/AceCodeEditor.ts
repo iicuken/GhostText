@@ -27,7 +27,7 @@ module GhostText.InputArea {
                 var Range = ace.require("ace/range").Range;
 
                 ghostTextAceDiv.addEventListener("GhostTextServerInput", function (e: any) {
-                    ghostTextAceEditorSession.setValue(e.detail.text);
+                    ghostTextAceEditorSession.setValue(e.detail);
                 });
 
                 ghostTextAceDiv.addEventListener("GhostTextDoFocus", function () {

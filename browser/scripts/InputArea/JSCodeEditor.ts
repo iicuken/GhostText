@@ -153,7 +153,7 @@ module GhostText.InputArea {
             }
 
             this.currentText = text;
-            var details = {detail: {text: this.currentText}};
+            var details = {detail: this.currentText};
             var gtServerInputEvent = <Event>StandardsCustomEvent.get('GhostTextServerInput', details);
             this.jsCodeEditorDiv.dispatchEvent(gtServerInputEvent);
         }
